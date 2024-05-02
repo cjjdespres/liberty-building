@@ -7,7 +7,7 @@ This repo contains some scripts/docker files to build liberty containers from sc
 
 ## Installation
 
-Use `git clone --recurse-submodules https://github.com/cjjdespres/liberty-container` to get this repo itself. After that, make sure that a `tomcat.tar.gz` and a `criu.tar.gz` file are present in the `extras` folder in the root of this project - they are used in the building of the base JDK image and should contain a tomcat and a criu build, respectively. Finally, this build requires you to be running with a Linux kernel that supports `setcap cap_checkpoint_restore`, which should be available in version `5.9` and later.
+Use `git clone --recurse-submodules https://github.com/cjjdespres/liberty-container` to get this repo itself. After that, create an `extras/` folder in the root of this project and add files `tomcat.tar.gz` and `criu.tar.gz` to it - they are used in the building of the base JDK image and should contain a tomcat and a criu build, respectively. Finally, this build requires you to be running with a Linux kernel that supports `setcap cap_checkpoint_restore`, which should be available in version `5.9` and later.
 
 ## Usage
 
